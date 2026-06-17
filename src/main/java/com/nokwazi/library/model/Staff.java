@@ -27,7 +27,7 @@ public abstract class Staff extends Person{
 
     @Override
     public String toString() {
-        return super.toString() + "Employee ID: " + employeeId + ", Years Of Service: " + yearsOfService;
+        return super.toString() + ", Employee ID: " + employeeId + ", Years Of Service: " + yearsOfService;
     }
 
     public abstract double monthlySalary();

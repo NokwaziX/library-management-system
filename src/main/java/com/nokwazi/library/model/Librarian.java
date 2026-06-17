@@ -9,11 +9,22 @@ public class Librarian extends Staff {
     private String specialisation;
     private final String qualification;
 
-    public Librarian(String firstName, String lastName, String email, String phoneNumber, String employeeId, int yearsOfService, String qualification, String specialisation) {
+    public Librarian(String firstName, String lastName, String email, String phoneNumber, String employeeId, int yearsOfService, String specialisation, String qualification) {
         super(firstName, lastName, email, phoneNumber, employeeId, yearsOfService);
         this.qualification = qualification;
         this.specialisation = specialisation;
     }
+
+    public String specialisation() {
+        return specialisation;
+    }
+    public String qualification() {
+        return qualification;
+    }
+
+    public void updateSpecialisation(String specialisation) {
+        this.specialisation = specialisation;
+        }
 
     @Override
     public double monthlySalary() {
@@ -34,5 +45,6 @@ public class Librarian extends Staff {
     public String toString(){
         return super.toString() + ", Specialisation: " + specialisation + ", Qualification: " + qualification;
     }
+
 
 }

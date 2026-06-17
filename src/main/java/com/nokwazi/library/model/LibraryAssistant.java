@@ -12,6 +12,13 @@ public class LibraryAssistant extends Staff {
         this.section = section;
     }
 
+    public String section() {
+        return section;
+    }
+
+    public void updateSection(String section) {
+        this.section = section;
+    }
 
     @Override
     public double monthlySalary() {
@@ -32,5 +39,6 @@ public class LibraryAssistant extends Staff {
     public String toString() {
         return super.toString() + ", Section: " + section;
     }
+
 
 }
